@@ -19,7 +19,7 @@ say:
 The four design patterns I have chosen to summarise are Decorator, Observer, State and Prototype design pattern. I have 
 selected one creational, one structural and two behavioral design patterns.
 
-###1. **Prototype**:
+### 1. Prototype:
 - _**Use case**_: Prototyping basically provides a cloning mechanism to clone an object when the inner workings of the 
   class interface of the object cannot be known. This is generally achieved by a cloning method which returns a new 
   cloned object. An example where prototyping is used is when third party libraries are used in the project and the 
@@ -31,7 +31,7 @@ selected one creational, one structural and two behavioral design patterns.
   similar to class inheritance except for the cloning method.
 - _**Pros and cons**_: An advantage of prototyping is that it eliminates the need for the source code of a third party 
   class implementation. A disadvantage is that circular references are more difficult to identify and debug.
-###2. **Decorator**:
+### 2. Decorator:
 - _**Use case**_: Decorator design pattern is mostly used when the core logic of a particular software implementation 
   remains the same while variants perform different pre or postprocessing on the data. A relevant example is
   our past assignment to generate different notifications for high or low temperatures in the battery management farm.
@@ -43,7 +43,7 @@ definition. This follows the Abstraction -> Accumulation flow of design patterns
 - _**Pros and Cons**_: Advantage is that it allows different compositions of required behavior at the client while retaining
 class hierarchy simplicity. Disadvantage is that decorators cannot break the flow of the request since they are
 recursive.
-###3. **Observer**:
+### 3. Observer:
 - _**Use case**_: Observer design pattern is used when the change in state of one object needs a functions to be called in
   another object with minimal overhead. A relevant example is from my workplace wherein, if there is a change in input
   file content, it should trigger a different build mechanism as opposed to when the input files are unchanged. Observers
@@ -55,7 +55,7 @@ recursive.
   from the publisher.
 - _**Pros and cons**_: An advantage is that it allows addition of subscribers during run-time and isn't static. A 
   disadvantage is that the order in which the subscribers are notified cannot be controlled.
-###4.  **State**:
+### 4. State:
 - _**Use case**_: State design pattern is used when the problem you are trying to solve takes the form of a Finite State
   Machine(FSM) with a large number of states. It is implemented in lieu of an if-else chain or a switch case block for 
   easier extensibility and minimum code duplication. A suitable example is a video game where a huge number of state
